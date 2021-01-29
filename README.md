@@ -4,7 +4,7 @@
 
 #### By _**Taylor Baker**_
 
-<img src="img/pizza-parlor.jpg" style="max-width:400px; display: block; width: 75%; margin-left: auto; margin-right: auto; ">
+<img src="img/pizza-parlor.jpg" style="max-width:360px; display: block; width: 75%; margin-left: auto; margin-right: auto; ">
 
 ## Description
 
@@ -65,19 +65,15 @@ _For any questions, comments, or to report a bug, please contact the developer a
 
 ## Specs
 ```
-Describe: beepBoop()
+Describe: Order()
 
-Test 1: ''
-Expect(beepBoop()).toEqual([]);
+Test 1: 'It will create an instance of an Order object'
+Expect(Order(7, 2)).toEqual({this.sizeCost = 7; this.toppingsCost = 2;});
 
-Test 2: ''
-Expect(beepBoop()).toEqual([]);
+Describe: calcOrderCost()
 
-Test 3: ''
-Expect(beepBoop()).toEqual([]);
-
-Test 4: ''
-Expect(beepBoop()).toEqual([]);
+Test 2: 'It will add the cost of the pizza size with the cost of the pizza toppings, thus calculating the total cost of the pizza order.'
+Expect(calcOrderCost(Order(7, 2))).toEqual(9);
 ```
 
 ### License
