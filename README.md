@@ -67,7 +67,7 @@ _For any questions, comments, or to report a bug, please contact the developer a
 ```
 Describe: Pizza()
 
-Test 1: 'It will create an instance of an Order object'
+Test 1: 'It will create an instance of a Pizza object'
 Expect(Pizza(7, 2)).toEqual(Pizza {this.sizeCost = 7; this.toppingsCost = 2;});
 
 Describe: calcPizzaCost()

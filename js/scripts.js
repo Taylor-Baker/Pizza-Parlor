@@ -10,3 +10,16 @@ Pizza.prototype.calcPizzaCost = function() {
 }
 
 // User Interface Logic //
+
+$(document).ready(function() {
+  $("#order").click(function(event) {
+    event.preventDefualt;
+    let pizzaSize = parseInt($("input[type=radio]:checked").val());
+    let pizzaToppings = 2; //parseInt($("input[type='checkbox']:checked").val());
+    let newPizza = new Pizza(pizzaSize, pizzaToppings);
+
+    let totalPizzaCost = newPizza.calcPizzaCost();
+
+    $('.output').text(`Your pizza will cost $${totalPizzaCost}.`);
+  });
+});
