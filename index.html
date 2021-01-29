@@ -9,19 +9,58 @@
 </head>
 
 <body>
-  <!--Page Header-->
   <div class="container">
-    <h1>The Pizza Parlor</h1>
-    <p>Great pizza at a fair price!</p>
-  </div>
+    <!--Page Header-->
+    <div>
+      <h1>The Pizza Parlor</h1>
+      <p>Great pizza at a fair price!</p>
+    </div>
 
-  <!--Main Section-->
-  <div class="container">
-    <h2>Order Up!</h2>
-    <p>Us our online menu to order a pizza with any toppings that you would like.</p>
-  </div>
-  <div>
+    <!--Main Section-->
+    <div>
+      <h2>Order Up!</h2>
+      <p>Use our online menu to order a pizza with any toppings that you would like.</p>
+    </div>
 
+    <!--Order Form-->
+    <div>
+      <!--Size Selector-->
+      <div>
+        <h2>Select Your Size:</h2>
+        <label>Personal: 
+          <input name="size" id="personal" type="radio" value="">
+        </label><br>
+        <label>Small: 
+          <input name="size" id="small" type="radio">
+        </label><br>
+        <label>Medium: 
+          <input name="size" id="medium" type="radio">
+        </label><br>
+        <label>Large: 
+          <input name="size" id="large" type="radio">
+        </label><br>
+        <label>Extra Large: 
+          <input name="size" id="extra-large" type="radio">
+        </label><br>
+      </div>
+
+      <!--Toppings Selector-->
+      <div>
+        <h2>Select Your Toppings:</h2>
+        <label>Pepperoni: 
+          <input name="toppings" id="pepperoni" type="checkbox" value="1">
+        </label><br>
+        <label>Sausage: 
+          <input name="toppings" id="sausage" type="checkbox" value="1">
+        </label><br>
+        <label>Extra Cheese: 
+          <input name="toppings" id="extra-cheese" type="checkbox" value="1">
+        </label><br>
+      </div>
+    </div>
+
+    <!--Output Box-->
+    <div class="output"></div>
   </div>
 </body>
 
