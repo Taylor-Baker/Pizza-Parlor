@@ -68,7 +68,7 @@ _For any questions, comments, or to report a bug, please contact the developer a
 Describe: Order()
 
 Test 1: 'It will create an instance of an Order object'
-Expect(Order(7, 2)).toEqual({this.sizeCost = 7; this.toppingsCost = 2;});
+Expect(Order(7, 2)).toEqual(Pizza {this.sizeCost = 7; this.toppingsCost = 2;});
 
 Describe: calcOrderCost()
 
