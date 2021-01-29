@@ -65,15 +65,15 @@ _For any questions, comments, or to report a bug, please contact the developer a
 
 ## Specs
 ```
-Describe: Order()
+Describe: Pizza()
 
 Test 1: 'It will create an instance of an Order object'
-Expect(Order(7, 2)).toEqual(Pizza {this.sizeCost = 7; this.toppingsCost = 2;});
+Expect(Pizza(7, 2)).toEqual(Pizza {this.sizeCost = 7; this.toppingsCost = 2;});
 
-Describe: calcOrderCost()
+Describe: calcPizzaCost()
 
-Test 2: 'It will add the cost of the pizza size with the cost of the pizza toppings, thus calculating the total cost of the pizza order.'
-Expect(calcOrderCost(Order(7, 2))).toEqual(9);
+Test 1: 'It will add the cost of the pizza size with the cost of the pizza toppings, thus calculating the total cost of the pizza order.'
+Expect(Pizza(7, 2).calcPizzaCost()).toEqual(9);
 ```
 
 ### License

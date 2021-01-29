@@ -5,4 +5,8 @@ function Pizza(size, toppings) {
   this.toppingsCost = toppings;
 }
 
+Pizza.prototype.calcPizzaCost = function() {
+  return this.sizeCost + this.toppingsCost;
+}
+
 // User Interface Logic //
