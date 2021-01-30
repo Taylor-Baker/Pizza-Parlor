@@ -15,7 +15,8 @@ $(document).ready(function() {
   $("#order").click(function(event) {
     event.preventDefualt;
     let pizzaSize = parseInt($("input[type=radio]:checked").val());
-    let pizzaToppings = 2; //parseInt($("input[type='checkbox']:checked").val());
+    let pizzaToppings = parseInt($("input:checkbox:checked").length);
+    
     let newPizza = new Pizza(pizzaSize, pizzaToppings);
 
     let totalPizzaCost = newPizza.calcPizzaCost();

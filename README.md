@@ -74,6 +74,8 @@ Describe: calcPizzaCost()
 
 Test 1: 'It will add the cost of the pizza size with the cost of the pizza toppings, thus calculating the total cost of the pizza order.'
 Expect(Pizza(7, 2).calcPizzaCost()).toEqual(9);
+
+
 ```
 
 ### License
