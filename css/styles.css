@@ -1,0 +1,13 @@
+.head h1 {
+  font-size: 60px;
+}
+
+.head p {
+  font-size: 26px;
+}
+
+.logo {
+  max-width: 160px;
+  float: left;
+}
+

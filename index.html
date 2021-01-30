@@ -9,24 +9,26 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="jumbotron">
     <!--Page Header-->
-    <div>
-      <h1>The Pizza Parlor</h1>
+    <div class="container head">
+      <img class="logo" src="img/pizza-logo-vector.png">
+      <h1>Pizza Parlor</h1>
       <p>Great pizza at a fair price!</p>
     </div>
-
+  </div>
+  <div class="container">
     <!--Main Section-->
-    <div>
+    <div class="main">
       <h2>Order Up!</h2>
-      <p>Use our online menu to order a pizza with any toppings that you would like.</p>
+      <p>Welcome! Use our online menu to order a pizza with any toppings that you would like.</p>
     </div>
 
     <!--Order Form-->
-    <div>
+    <div class="size-toppings">
       <!--Size Selector-->
       <div id="size">
-        <h2>Select Your Size:</h2>
+        <h3>Select a Size:</h3>
         <label>Personal: 
           <input name="size" id="personal" type="radio" value="5">
         </label><br>
@@ -46,7 +48,7 @@
 
       <!--Toppings Selector-->
       <div id="toppings">
-        <h2>Select Your Toppings:</h2>
+        <h3>Choose Your Toppings:</h3>
         <label>Pepperoni: 
           <input name="toppings" id="pepperoni" type="checkbox" value="1">
         </label><br>
@@ -58,7 +60,7 @@
         </label><br>
       </div>
       <!--Order Submit-->
-      <div>
+      <div class="submit">
         <button id="order">Order Pizza</button>
       </div>
     </div>
